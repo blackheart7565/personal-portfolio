@@ -2,7 +2,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { navigationEndpoints } from "../endpoints/navigationEndpoints";
 import { Logo } from "./Logo";
 
 interface IHeaderProps { }
@@ -14,37 +13,35 @@ interface INavigation {
 }
 
 export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
-
-
 	const navigation: INavigation[] = [
 		{
 			id: 1,
-			path: navigationEndpoints.home,
+			path: "#home",
 			label: "Home",
 		},
 		{
 			id: 2,
-			path: navigationEndpoints.about,
+			path: "#about",
 			label: "About",
 		},
 		{
 			id: 3,
-			path: navigationEndpoints.services,
+			path: "#services",
 			label: "Services",
 		},
 		{
 			id: 4,
-			path: navigationEndpoints.projects,
+			path: "#projects",
 			label: "Projects",
 		},
 		{
 			id: 5,
-			path: navigationEndpoints.testimonials,
+			path: "#testimonials",
 			label: "Testimonials",
 		},
 		{
 			id: 6,
-			path: navigationEndpoints.contactUs,
+			path: "#contactUs",
 			label: "Contact Us",
 		},
 	];
