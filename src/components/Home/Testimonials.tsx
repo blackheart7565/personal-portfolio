@@ -2,20 +2,21 @@
 import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css";
 import { TestimonialsCard } from "./TestimonialsCard";
+
+import "swiper/css";
 
 interface ITestimonialsProps { }
 
 export const Testimonials: FC<ITestimonialsProps> = (): JSX.Element => {
 	return (
 		<section className="relative">
-			<div className="flex flex-col items-center justify-center h-full py-20">
+			<div className="flex flex-col items-center justify-center h-full pb-20 pt-20 xl:pt-48">
 				<div className="container">
 					<h1 className="text-4xl xl:text-[65px] font-semibold tracking-[0.03em] dark:text-white text-black text-center">
 						Testimonials
 					</h1>
-					<p className="text-base xl:text-[21px] tracking-[0.03em] dark:text-white text-black text-center max-w-4xl mx-auto mt-4">
+					<p className="text-base xl:text-[21px] tracking-[0.03em] dark:text-white text-black text-center max-w-4xl mx-auto mt-12">
 						Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante.
 					</p>
 				</div>
