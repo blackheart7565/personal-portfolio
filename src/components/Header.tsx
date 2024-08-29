@@ -3,49 +3,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Logo } from "./Logo";
+import { navigation } from "../utils/navigation";
+
+import type { INavigation } from "../types/navigation";
 
 interface IHeaderProps { }
 
-interface INavigation {
-	id: number,
-	path: string,
-	label: string,
-}
-
 export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
-	const navigation: INavigation[] = [
-		{
-			id: 1,
-			path: "#home",
-			label: "Home",
-		},
-		{
-			id: 2,
-			path: "#about",
-			label: "About",
-		},
-		{
-			id: 3,
-			path: "#services",
-			label: "Services",
-		},
-		{
-			id: 4,
-			path: "#projects",
-			label: "Projects",
-		},
-		{
-			id: 5,
-			path: "#testimonials",
-			label: "Testimonials",
-		},
-		{
-			id: 6,
-			path: "#contactUs",
-			label: "Contact Us",
-		},
-	];
-
 	return (
 		<header className="fixed top-0 left-0 w-full z-[1000] dark:bg-black bg-white py-5">
 			<div className="container mx-auto justify-between items-center flex">
