@@ -41,7 +41,7 @@ export const Services: FC<IServicesProps> = (): JSX.Element => {
 	];
 
 	return (
-		<section className="xlm:min-h-screen xl:h-screen relative">
+		<section id="services" className="xlm:min-h-screen xl:h-screen relative">
 			<div className="container flex flex-col items-center justify-center h-full py-10">
 				<h1 className="text-5xl xl:text-[65px] font-semibold tracking-[0.03em] dark:text-white text-black text-center">Services</h1>
 				<p className="text-lg xl:text-[21px] tracking-[0.03em] dark:text-white text-black text-center max-w-4xl mx-auto mt-4">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam venenatis fghh hgjj nisi ante.</p>

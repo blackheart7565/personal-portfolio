@@ -6,7 +6,7 @@ interface IAboutProps { }
 
 export const About: React.FC<IAboutProps> = (): JSX.Element => {
 	return (
-		<section className="xlm:min-h-screen xl:h-screen relative">
+		<section id="about" className="xlm:min-h-screen xl:h-screen relative">
 			<div className="container flex flex-col-reverse xlm:pt-40 xlm:gap-20 pb-10 xl:flex-row items-center justify-between h-full">
 				<div className="left">
 					<div className="max-w-[562px]">

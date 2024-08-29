@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 import React from "react";
-import { Link } from "react-router-dom";
 import { BsSunFill } from "react-icons/bs";
 import { BsFillMoonFill } from "react-icons/bs";
 
@@ -34,12 +33,12 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 					<ul className="flex items-center gap-[13px]">
 						{navigation.map((nav: INavigation): JSX.Element => (
 							<li key={nav.id} className="group">
-								<Link
-									to={nav.path}
+								<a
+									href={nav.path}
 									className="py-4 px-5 text-nowrap text-[21px] dark:text-white text-black group-hover:text-primary transition-colors duration-300 ease-in-out"
 								>
 									{nav.label}
-								</Link>
+								</a>
 							</li>
 						))}
 					</ul>

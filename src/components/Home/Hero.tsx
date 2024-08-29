@@ -10,7 +10,7 @@ interface IHeroProps { }
 
 export const Hero: React.FC<IHeroProps> = (): JSX.Element => {
 	return (
-		<section className="min-h-screen relative">
+		<section id="hero" className="min-h-screen relative">
 			<div className="container flex flex-col xl:flex-row gap-20 items-center justify-between pt-28 h-full">
 				
 				<div className="flex flex-col gap-5 sm:gap-0 left max-w-[500px] xl:max-w-[718px] dark:text-white text-black">

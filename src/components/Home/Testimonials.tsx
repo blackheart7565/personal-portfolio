@@ -10,7 +10,7 @@ interface ITestimonialsProps { }
 
 export const Testimonials: FC<ITestimonialsProps> = (): JSX.Element => {
 	return (
-		<section className="relative">
+		<section id="testimonials" className="relative">
 			<div className="flex flex-col items-center justify-center h-full pb-20 pt-20 xl:pt-48">
 				<div className="container">
 					<h1 className="text-4xl xl:text-[65px] font-semibold tracking-[0.03em] dark:text-white text-black text-center">

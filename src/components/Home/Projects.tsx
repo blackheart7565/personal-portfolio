@@ -8,7 +8,7 @@ interface IProjectsProps { }
 
 export const Projects: FC<IProjectsProps> = (): JSX.Element => {
 	return (
-		<section className="relative">
+		<section id="projects" className="relative">
 			<div className="container flex flex-col items-center justify-center h-full pt-20 pb-10">
 				<h1 className="text-5xl xl:text-[65px] font-semibold tracking-[0.03em] dark:text-white text-black text-center">My Projects</h1>
 				<p className="text-lg xl:text-[21px] tracking-[0.03em] dark:text-white text-black text-center max-w-4xl mx-auto mt-4">

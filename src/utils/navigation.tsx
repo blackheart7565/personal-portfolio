@@ -3,7 +3,7 @@ import type { INavigation } from "../types/navigation";
 export const navigation: INavigation[] = [
 	{
 		id: 1,
-		path: "#home",
+		path: "#hero",
 		label: "Home",
 	},
 	{

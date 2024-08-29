@@ -5,7 +5,7 @@ interface IContactUsProps { }
 
 export const ContactUs: FC<IContactUsProps> = (): JSX.Element => {
 	return (
-		<section className="relative">
+		<section id="contactUs" className="relative">
 			<div className="container flex flex-col items-center justify-center h-full pt-20 pb-20">
 				<h1 className="text-5xl xl:text-[65px] font-semibold tracking-[0.03em] dark:text-white text-black text-center">
 					Lets Design Together
