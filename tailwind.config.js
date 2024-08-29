@@ -19,9 +19,6 @@ export default {
 			},
 			spacing: {
 				'8xl': '88.625rem',
-			},
-			gridTemplateColumns: {
-				'cardServices': 'repeat(auto-fill, minmax(320px, 1fr))',
 			}
 		},
 	},

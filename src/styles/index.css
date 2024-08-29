@@ -42,6 +42,17 @@ body {
 	border-radius: 50%;
 }
 
+
+.cardServices {
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+@media screen and (min-width: 768px) {
+	.cardServices {
+		grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	}
+}
+
 .tabsGridRow {
 	grid-template-rows: 50px 1fr;
 }
@@ -75,6 +86,7 @@ body {
 .burgerBtn::before {
 	content: "";
 }
+
 .burgerBtn::before {
 	transform: translate(-50%, calc(-50% + (-10px)));
 }
