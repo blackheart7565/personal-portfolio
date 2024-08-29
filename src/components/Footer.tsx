@@ -14,18 +14,18 @@ interface IFooterProps { }
 export const Footer: FC<IFooterProps> = (): JSX.Element => {
 	return (
 		<footer className="relative">
-			<div className="container grid grid-rows-3 items-center justify-center h-full pt-32">
-				<div className="flex justify-center">
+			<div className="container grid sm:grid-rows-3 items-center pt-20">
+				<div className="flex justify-center smm:py-8">
 					<Logo />
 				</div>
 
-				<nav className="flex items-center">
-					<ul className="flex items-center gap-[13px]">
+				<nav className="max-w-5xl w-full mx-auto smm:py-8">
+					<ul className="grid footerNavigation shrink-0 w-full place-items-center gap-[13px]">
 						{navigation.map((nav: INavigation): JSX.Element => (
 							<li key={nav.id} className="group">
 								<Link
 									to={nav.path}
-									className="py-4 px-5 text-[21px] dark:text-white text-black group-hover:text-primary transition-colors duration-300 ease-in-out"
+									className="py-4 px-5 text-[21px] text-nowrap dark:text-white text-black group-hover:text-primary transition-colors duration-300 ease-in-out"
 								>
 									{nav.label}
 								</Link>

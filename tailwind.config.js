@@ -11,6 +11,7 @@ export default {
 	theme: {
 		screens: {
 			"xlm": { "raw": "(max-width: 1280px)" },
+			"smm": { "raw": "(max-width: 640px)" },
 			...defaultTheme.screens,
 		},
 		extend: {

@@ -94,3 +94,7 @@ body {
 .burgerBtn::after {
 	transform: translate(-50%, calc(-50% + 10px));
 }
+
+.footerNavigation {
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
