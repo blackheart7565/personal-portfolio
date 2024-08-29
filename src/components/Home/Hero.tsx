@@ -31,7 +31,7 @@ export const Hero: React.FC<IHeroProps> = (): JSX.Element => {
 						<img src="/hero-img.png" alt="hero-image" className="w-full h-full object-cover object-center" />
 					</div>
 
-					<div className="absolute left-1/2 -translate-x-1/2 mt-5 dark:text-white text-black flex items-center justify-between gap-6 text-4xl">
+					<div className="absolute left-1/2 -translate-x-1/2 mt-10 dark:text-white text-black flex items-center justify-between gap-6 text-4xl">
 						<Link to={""} className="w-[33px] h-[33px] block">
 							<BsFacebook className="socialIcon" />
 						</Link>
