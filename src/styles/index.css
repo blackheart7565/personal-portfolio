@@ -24,6 +24,19 @@ body {
 	@apply dark:bg-[#000000] bg-[#FFFFFF]
 }
 
+body::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+	@apply bg-white dark:bg-black
+}
+
+body::-webkit-scrollbar-thumb {
+	@apply rounded-full bg-black dark:bg-white
+}
+
 .container {
 	@apply max-w-8xl mx-auto px-3 lg:px-5
 }
