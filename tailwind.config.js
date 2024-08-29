@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+import defaultTheme from "tailwindcss/defaultTheme";
+
 export default {
 	content: [
 		"./index.html",
@@ -6,6 +9,10 @@ export default {
 	],
 	darkMode: "class",
 	theme: {
+		screens: {
+			"xlm": { "raw": "(max-width: 1280px)" },
+			...defaultTheme.screens,
+		},
 		extend: {
 			colors: {
 				"primary": "#FF6300"
