@@ -8,7 +8,7 @@ interface IProjectsListProps { }
 export const ProjectsList: React.FC<IProjectsListProps> = (): JSX.Element => {
 	return (
 		<nav className="w-full h-full">
-			<ul className="flex items-center justify-between gap-3">
+			<ul className="flex items-center justify-center xlm:gap-20 xl:justify-between gap-3 flex-wrap">
 				{[...Array.from({ length: 3 })].map((_, index: number) => (
 					<ProjectsCard key={index} />
 				))}

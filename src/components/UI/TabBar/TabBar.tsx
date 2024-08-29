@@ -24,13 +24,13 @@ export const TabBar: FC<ITabBarProps> = ({
 	const [selectId, setSelectId] = useState<number>(2);
 	return (
 		<div className="w-full">
-			<nav className="nav">
-				<ul className="flex justify-center items-center gap-3 tracking-[0.03em] dark:text-white text-black">
+			<nav className="nav overflow-x-auto">
+				<ul className="flex justify-start xl:justify-center items-center gap-3 py-3 tracking-[0.03em] dark:text-white text-black">
 					{navigation.map(nav => (
 						<li
 							key={nav.id}
 							className={classNames(
-								"text-2xl py-3 px-4 cursor-pointer rounded-lg bg-[#F3F3F3] text-black hover:text-white hover:bg-primary transition-colors duration-300 ease-in-out",
+								"text-2xl py-3 px-4 text-nowrap cursor-pointer rounded-lg bg-[#F3F3F3] text-black hover:text-white hover:bg-primary transition-colors duration-300 ease-in-out",
 								selectId === nav.id && "bg-primary text-white"
 							)}
 							onClick={(() => setSelectId(nav.id))}
