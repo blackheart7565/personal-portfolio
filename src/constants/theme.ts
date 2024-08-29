@@ -1,4 +1,1 @@
-export enum AllowedThemes {
-	DARK = "dark",
-	LIGHT = "light",
-}
+export type AllowedThemes = "dark" | "light";

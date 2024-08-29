@@ -1,15 +1,30 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsSunFill } from "react-icons/bs";
+import { BsFillMoonFill } from "react-icons/bs";
 
 import { Logo } from "./Logo";
 import { navigation } from "../utils/navigation";
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { localStorageKeys } from "../constants/localStorage";
+import { AllowedThemes } from "../constants/theme";
+import { useRedux } from "../hooks/useRedux";
 
 import type { INavigation } from "../types/navigation";
 
 interface IHeaderProps { }
 
 export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
+	const { theme } = useRedux();
+	const [themeLocal, setThemeLocal] = useLocalStorage<AllowedThemes>(localStorageKeys.theme, "light");
+
+	const handleSwitchTheme = (): void => {
+		const isDark = themeLocal === "dark" ? "light" : "dark";
+		setThemeLocal(isDark);
+		theme.setLang(isDark);
+	};
+
 	return (
 		<header className="fixed top-0 left-0 w-full z-[1000] dark:bg-black bg-white py-5">
 			<div className="container mx-auto justify-between items-center flex">
@@ -35,9 +50,20 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 					</button>
 				</nav>
 
-				<button className="flex xl:hidden relative bg-transparent border-none w-10 h-10 burgerBtn">
-					<span></span>
-				</button>
+				<div className="flex items-center gap-10">
+					<button className="flex xl:hidden relative bg-transparent border-none w-10 h-10 burgerBtn">
+						<span></span>
+					</button>
+					<button className="w-10 h-10 bg-transparent dark:text-white text-black"
+						onClick={handleSwitchTheme}
+					>
+						{
+							theme.theme === "dark"
+								? <BsFillMoonFill className="w-full h-full" />
+								: <BsSunFill className="w-full h-full" />
+						}
+					</button>
+				</div>
 			</div>
 		</header>
 	);
