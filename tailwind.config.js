@@ -9,6 +9,9 @@ export default {
 		extend: {
 			colors: {
 				"primary": "#FF6300"
+			},
+			spacing: {
+				'8xl': '88.625rem',
 			}
 		},
 	},

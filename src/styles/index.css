@@ -24,3 +24,11 @@ body {
 	font-weight: 400;
 	@apply dark:bg-[#000000] bg-[#FFFFFF]
 }
+
+.container {
+	@apply max-w-8xl mx-auto px-3 lg:px-5
+}
+
+.socialIcon {
+	@apply w-full h-full object-cover;
+}
