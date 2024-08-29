@@ -30,13 +30,13 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 			<div className="container mx-auto justify-between items-center flex">
 				<Logo />
 
-				<nav className="hidden xl:flex items-center">
+				<nav className="hidden xl:flex items-center overflow-x-auto overflow-y-hidden">
 					<ul className="flex items-center gap-[13px]">
 						{navigation.map((nav: INavigation): JSX.Element => (
 							<li key={nav.id} className="group">
 								<Link
 									to={nav.path}
-									className="py-4 px-5 text-[21px] dark:text-white text-black group-hover:text-primary transition-colors duration-300 ease-in-out"
+									className="py-4 px-5 text-nowrap text-[21px] dark:text-white text-black group-hover:text-primary transition-colors duration-300 ease-in-out"
 								>
 									{nav.label}
 								</Link>
@@ -49,12 +49,14 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 						Download CV
 					</button>
 				</nav>
+				<button className="flex xl:hidden relative bg-transparent border-none w-10 h-10 burgerBtn">
+					<span></span>
+				</button>
+			</div>
 
-				<div className="flex items-center gap-10">
-					<button className="flex xl:hidden relative bg-transparent border-none w-10 h-10 burgerBtn">
-						<span></span>
-					</button>
-					<button className="w-10 h-10 bg-transparent dark:text-white text-black"
+			<div className="xlm:hidden absolute top-full right-0 h-max">
+				<div className="flex justify-center items-center">
+					<button className="w-12 h-12 bg-transparent border-2 dark:bg-black bg-white border-black dark:border-white rounded-full p-2 dark:text-white text-black"
 						onClick={handleSwitchTheme}
 					>
 						{
@@ -63,6 +65,7 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 								: <BsSunFill className="w-full h-full" />
 						}
 					</button>
+					<span className=" h-1 w-20 bg-black dark:bg-white block"></span>
 				</div>
 			</div>
 		</header>
