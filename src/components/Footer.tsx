@@ -51,7 +51,7 @@ export const Footer: FC<IFooterProps> = (): JSX.Element => {
 					</div>
 				</div>
 			</div>
-			<div className="bg-[#121212] text-[21px] tracking-[0.03em] dark:text-white text-black py-5 w-full text-center mt-10">
+			<div className="bg-[#121212] text-[21px] tracking-[0.03em] text-white py-5 w-full text-center mt-10">
 				<p>© 2023 <span className="text-primary">Muhammad</span> All Rights Reserved , Inc.</p>
 			</div>
 		</footer>
