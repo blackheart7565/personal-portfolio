@@ -50,3 +50,11 @@ body {
 	flex-shrink: initial;
 	width: initial;
 }
+
+.testimonialsSwiper .swiper-slide {
+	transition: opacity 0.3s ease-in-out;
+}
+
+.testimonialsSwiper .swiper-slide:not(.swiper-slide-active) {
+	opacity: 0.2;
+}
