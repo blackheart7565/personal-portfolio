@@ -55,7 +55,7 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 
 			<div className="xlm:hidden absolute top-full right-0 h-max">
 				<div className="flex justify-center items-center">
-					<button className="w-12 h-12 bg-transparent border-2 dark:bg-black bg-white border-black dark:border-white rounded-full p-2 dark:text-white text-black"
+					<button className="w-12 h-12 bg-transparent border-2 border-solid dark:bg-black bg-white border-black dark:border-white rounded-full p-2 dark:text-white text-black"
 						onClick={handleSwitchTheme}
 					>
 						{
