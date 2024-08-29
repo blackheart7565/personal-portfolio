@@ -18,8 +18,8 @@ export const Home: FC<IHomeProps> = (): JSX.Element => {
 			<About />
 			<Services />
 			<Projects />
-			<ContactUs />
 			<Testimonials />
+			<ContactUs />
 		</div>
 	);
 };
