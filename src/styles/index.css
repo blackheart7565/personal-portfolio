@@ -41,3 +41,12 @@ body {
 	border: 2px solid #FF6300;
 	border-radius: 50%;
 }
+
+.tabsGridRow {
+	grid-template-rows: 50px 1fr;
+}
+
+.tabsSlideReset.swiper-slide {
+	flex-shrink: initial;
+	width: initial;
+}
