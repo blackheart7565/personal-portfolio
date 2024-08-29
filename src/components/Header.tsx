@@ -47,7 +47,7 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 	];
 
 	return (
-		<header className="fixed top-0 left-0 w-full z-[1000] dark:bg-black bg-white">
+		<header className="fixed top-0 left-0 w-full z-[1000] dark:bg-black bg-white py-5">
 			<div className="container mx-auto justify-between items-center flex">
 				<Logo />
 
