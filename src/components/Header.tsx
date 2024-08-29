@@ -15,7 +15,7 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 			<div className="container mx-auto justify-between items-center flex">
 				<Logo />
 
-				<nav className="flex items-center">
+				<nav className="hidden xl:flex items-center">
 					<ul className="flex items-center gap-[13px]">
 						{navigation.map((nav: INavigation): JSX.Element => (
 							<li key={nav.id} className="group">
@@ -34,6 +34,10 @@ export const Header: React.FC<IHeaderProps> = (): JSX.Element => {
 						Download CV
 					</button>
 				</nav>
+
+				<button className="flex xl:hidden relative bg-transparent border-none w-10 h-10 burgerBtn">
+					<span></span>
+				</button>
 			</div>
 		</header>
 	);
